@@ -57,7 +57,7 @@ function promptUser() {
 
 
 // function to write README file
-fs.writeFile("README.md", generateMarkdown, function(err) {
+fs.writeFile("README.md", generateMarkdown(), function(err) {
 
     if (err) {
       return console.log(err);
