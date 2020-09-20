@@ -1,12 +1,9 @@
 
-># README Generator
+# README Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 >This is a README generator that is designed to make quick, functional and professional text documents for all of your projects.
-
-## Table of Contents
->
 
 ## Installation Instructions
 >No installation required. However, NPM and Node.js are requirements for this generator to function.
@@ -20,7 +17,7 @@
 ## Contribution Guidelines
 >Shelby Kelly
 
->## Media
+## Media
 ![How To: README Generator gif](https://github.com/shelkelly/READMEcreation/blob/master/howtoreadmegif.gif?raw=true)
 
 [How to: README Generator](https://drive.google.com/file/d/1Z2PW_B5lVH5G5hFk_O34sWxonW9TidJD/view)
