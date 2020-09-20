@@ -1,5 +1,5 @@
 
-># README Generator
+# README Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
@@ -28,8 +28,10 @@
 ## Contributions
 >Shelby Kelly
 
->## Media
-<iframe src="https://drive.google.com/file/d/1Z2PW_B5lVH5G5hFk_O34sWxonW9TidJD/preview" width="640" height="480"></iframe>
+## Media
+![How To: README Generator gif](https://github.com/shelkelly/READMEcreation/blob/master/howtoreadmegif.gif?raw=true)
+
+[How to: README Generator](https://drive.google.com/file/d/1Z2PW_B5lVH5G5hFk_O34sWxonW9TidJD/view)
 
 ## Questions?
 ### Email: shelbypkelly@gmail.com
