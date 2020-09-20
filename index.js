@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 var fs = require("fs");
 const util = require("util");
+var badge = "";
+var link = "";
 
 // array of questions for user
 const questions = [{
@@ -76,31 +78,54 @@ promptUser()
 
 
 function generateMarkdown(answers) {
+    if (answers.license == "MIT") {
+        badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        link = "https://opensource.org/licenses/MIT";
+    } else if (answers.license == "LGPL") {
+        badge = "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)";
+        link = "https://www.gnu.org/licenses/lgpl-3.0";
+    } else if (answers.license == "MPL") {
+        badge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+        link = "https://opensource.org/licenses/MPL-2.0";
+    } else if (answers.license == "AGPL") {
+        badge = "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
+        link = "https://www.gnu.org/licenses/agpl-3.0";
+    } else if (answers.license == "Apache") {
+        badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        link = "https://opensource.org/licenses/Apache-2.0";
+    } else if (answers.license == "GPL") {
+        badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+        link = "https://www.gnu.org/licenses/gpl-3.0";
+    } else if (answers.license == "Unlicense") {
+        badge = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+        link = "http://unlicense.org/";
+    }
     return `
-# ${answers.title} 
+># ${answers.title}
+${badge}
 
 ## Description
-${answers.description}
+>${answers.description}
 
 ## Table of Contents
-${answers.tableoc}
+>${answers.tableoc}
 
 ## Installation Instructions
-${answers.installation}
+>${answers.installation}
 
 ## Usage Information
-${answers.usage}
+>${answers.usage}
 
 ## License
-${answers.license}
+>[${answers.license}](${link})
 
 ## Contribution Guidelines
-${answers.contributing}
+>${answers.contributing}
 
-## ${answers.tests}
+>## ${answers.tests}
 
 ## Questions?
 ### Email: ${answers.email}
-### GitHub: [${answers.github}](github.com/shelkelly).`;
+### GitHub: [${answers.github}](github.com/shelkelly)`;
 };
 
