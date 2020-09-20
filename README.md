@@ -1,7 +1,7 @@
 
 # README Generator 
 
-##Description
+## Description
 This is a README generator that is designed to make quick, functional and
  professional text documents for all of your projects.
 

@@ -79,7 +79,7 @@ function generateMarkdown(answers) {
     return `
 # ${answers.title} 
 
-##Description
+## Description
 ${answers.description}
 
 ## Table of Contents
