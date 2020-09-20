@@ -32,7 +32,7 @@ const questions = [{
     type: "checkbox",
     name: "license",
     message: "License: ",
-    choices: [ "MIT", new inquirer.Separator(), "LGPL", new inquirer.Separator(), "MPL", new inquirer.Separator(), "AGPL", new inquirer.Separator, "Apache", new inquirer.Separator, "GPL", new inquirer.Separator(), "Unlicense" ]
+    choices: ["MIT", new inquirer.Separator(), "LGPL", new inquirer.Separator(), "MPL", new inquirer.Separator(), "AGPL", new inquirer.Separator, "Apache", new inquirer.Separator, "GPL", new inquirer.Separator(), "Unlicense"]
 },
 {
     type: "input",
@@ -50,19 +50,19 @@ const questions = [{
     message: "GitHub Username: "
 },
 {
-type: "input",
-name: "email",
-message: "Email: "
+    type: "input",
+    name: "email",
+    message: "Email: "
 }];
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-    function promptUser() {
-        return inquirer.prompt(questions);
-    };
+function promptUser() {
+    return inquirer.prompt(questions);
+};
 
-    function generateMarkdown(answers) {
-        return `# ${questions.title}
+function generateMarkdown(answers) {
+    return ` # ${questions.title}
 
     ## Description
     ${questions.description}
@@ -87,16 +87,16 @@ const writeFileAsync = util.promisify(fs.writeFile);
     ## Questions?
     ### Email: ### ${questions.email}
     ### GitHub: [${questions.github}](github.com/shelkelly).`;
-    }
+}
 
-    promptUser()
-        .then(function (answers) {
-            const genMark = generateMarkdown(answers);
+promptUser()
+    .then(function (answers) {
+        const genMark = generateMarkdown(answers);
 
-            return writeFileAsync("README.md", genMark);
-        }).then(function () {
-            console.log("Successfully wrote to README.md")
-        })
-        .catch(function (err) {
-            console.log(err);
-        });
+        return writeFileAsync("README.txt", genMark);
+    }).then(function () {
+        console.log("Successfully wrote to README.txt")
+    })
+    .catch(function (err) {
+        console.log(err);
+    });
