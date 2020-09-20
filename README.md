@@ -1,25 +1,31 @@
- # README Generator 
 
-    ## Description
-    This is a README generator that is designed to make quick, functional and professional text documents for all of your projects.
+# README Generator 
 
-    ## Table of Contents
-    # 
+##Description
+This is a README generator that is designed to make quick, functional and
+ professional text documents for all of your projects.
 
-    ## Installation Instructions
-    No installation required.
+## Table of Contents
 
-    ## Usage Information
-    Open index.js in your coding terminal. Run `npm install`. Run `node index`. You will be prompted with a series of questions. Upon completion a README will be generated ready for use or editing. Running this process again will simply overwrite your previous input.
 
-    ## License
-    MIT
+## Installation Instructions
+No installation required. However, NPM and Node.js are requirements for
+ this generator to function.
 
-    ## Contribution Guidelines
-    Shelby Kelly
+## Usage Information
+Open index.js in your coding terminal. Run `npm install`. Run `node index`.
+ You will be prompted with a series of questions. Upon completion, a README
+  will be generated and ready for use or editing. Running this process
+   again will simply overwrite your previous input.
 
-    ## 
+## License
+MIT
 
-    ## Questions?
-    ### Email: shelbypkelly@gmail.com
-    ### GitHub: [shelkelly](github.com/shelkelly).
+## Contribution Guidelines
+Shelby Kelly
+
+## 
+
+## Questions?
+### Email: shelbypkelly@gmail.com
+### GitHub: [shelkelly](github.com/shelkelly).

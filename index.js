@@ -76,30 +76,31 @@ promptUser()
 
 
 function generateMarkdown(answers) {
-    return ` # ${answers.title} 
+    return `
+# ${answers.title} 
 
-    ## Description
-    ${answers.description}
+##Description
+${answers.description}
 
-    ## Table of Contents
-    # ${answers.tableoc}
+## Table of Contents
+${answers.tableoc}
 
-    ## Installation Instructions
-    ${answers.installation}
+## Installation Instructions
+${answers.installation}
 
-    ## Usage Information
-    ${answers.usage}
+## Usage Information
+${answers.usage}
 
-    ## License
-    ${answers.license}
+## License
+${answers.license}
 
-    ## Contribution Guidelines
-    ${answers.contributing}
+## Contribution Guidelines
+${answers.contributing}
 
-    ## ${answers.tests}
+## ${answers.tests}
 
-    ## Questions?
-    ### Email: ${answers.email}
-    ### GitHub: [${answers.github}](github.com/shelkelly).`;
+## Questions?
+### Email: ${answers.email}
+### GitHub: [${answers.github}](github.com/shelkelly).`;
 };
 
