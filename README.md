@@ -6,7 +6,15 @@
 >This is a README generator that is designed to make quick, functional and professional text documents for all of your projects.
 
 ## Table of Contents
->
+- [Title](https://github.com/shelkelly/READMEcreation#title)
+- [Description](https://github.com/shelkelly/READMEcreation#description)
+- [Table of Contents](https://github.com/shelkelly/READMEcreation#table-of-contents)
+- [Installation Instructions](https://github.com/shelkelly/READMEcreation#installation-instructions)
+- [Usage Information](https://github.com/shelkelly/READMEcreation#usage-information)
+- [License](https://github.com/shelkelly/READMEcreation#license)
+- [Contributions](https://github.com/shelkelly/READMEcreation#contributions)
+- [Media](https://github.com/shelkelly/READMEcreation#media)
+- [Questions](https://github.com/shelkelly/READMEcreation#questions)
 
 ## Installation Instructions
 >No installation required. However, NPM and Node.js are requirements for this generator to function.
@@ -17,7 +25,7 @@
 ## License
 >[MIT](https://opensource.org/licenses/MIT)
 
-## Contribution Guidelines
+## Contributions
 >Shelby Kelly
 
 >## Media
