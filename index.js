@@ -61,38 +61,10 @@ function promptUser() {
     return inquirer.prompt(questions);
 };
 
-function generateMarkdown(answers) {
-    return ` # ${questions.title} 
-
-    ## Description
-    ${questions.description}
-
-    ## Table of Contents
-    # ${questions.tableoc}
-
-    ## Installation Instructions
-    How to execute the application?
-    ${questions.installation}
-
-    ## Usage Information
-    ${questions.usage}
-
-    ## License
-    ${questions.license}
-
-    ## Contribution Guidelines
-    ${questions.contributing}
-
-    ## ${questions.tests}
-
-    ## Questions?
-    ### Email: ### ${questions.email}
-    ### GitHub: [${questions.github}](github.com/shelkelly).`;
-}
-
 promptUser()
     .then(function (answers) {
         const genMark = generateMarkdown(answers);
+        console.log(answers);
 
         return writeFileAsync("README.md", genMark);
     }).then(function () {
@@ -101,3 +73,33 @@ promptUser()
     .catch(function (err) {
         console.log(err);
     });
+
+
+function generateMarkdown(answers) {
+    return ` # ${answers.title} 
+
+    ## Description
+    ${answers.description}
+
+    ## Table of Contents
+    # ${answers.tableoc}
+
+    ## Installation Instructions
+    ${answers.installation}
+
+    ## Usage Information
+    ${answers.usage}
+
+    ## License
+    ${answers.license}
+
+    ## Contribution Guidelines
+    ${answers.contributing}
+
+    ## ${answers.tests}
+
+    ## Questions?
+    ### Email: ${answers.email}
+    ### GitHub: [${answers.github}](github.com/shelkelly).`;
+};
+
