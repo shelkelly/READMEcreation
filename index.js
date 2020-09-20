@@ -62,15 +62,16 @@ function promptUser() {
 };
 
 function generateMarkdown(answers) {
-    return ` # ${questions.title}
+    return ` # ${questions.title} 
 
     ## Description
     ${questions.description}
 
-    ##Table of Contents
+    ## Table of Contents
     # ${questions.tableoc}
 
     ## Installation Instructions
+    How to execute the application?
     ${questions.installation}
 
     ## Usage Information
@@ -93,9 +94,9 @@ promptUser()
     .then(function (answers) {
         const genMark = generateMarkdown(answers);
 
-        return writeFileAsync("README.txt", genMark);
+        return writeFileAsync("README.md", genMark);
     }).then(function () {
-        console.log("Successfully wrote to README.txt")
+        console.log("Successfully wrote to README.md")
     })
     .catch(function (err) {
         console.log(err);
